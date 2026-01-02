@@ -15,5 +15,10 @@ public class ArrayList_02 {
         int value = list.get(1); // Accessing the second element
         System.out.println("value: " + value);
 
+        // Iterating through the ArrayList
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+
     }
 }
