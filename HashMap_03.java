@@ -9,5 +9,9 @@ public class HashMap_03 {
         map.put("Apple", 1);
         map.put("Banana", 2);
         map.put("Orange", 3);
+
+        // Accessing values
+        int value = map.get("Banana"); // Accessing the value for key "Banana"
+        System.out.println("value: " + value);
     }
 }
