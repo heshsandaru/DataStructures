@@ -1,5 +1,51 @@
+import java.util.Stack;
+
 public class StackDemo_04 {
     public static void main(String[] args) {
+        Stack_04 stack = new Stack_04(5);
 
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+
+        stack.printStack(); // [ 10, 20, 30, 40 ]
+
+        System.out.println("Removed : " + stack.pop()); // Removed : 40
+
+        stack.printStack(); // [ 10, 20, 30 ]
+
+        System.out.println("Peek : " + stack.peek()); // Peek : 30
+
+        ////////////////////
+
+        stack.push(40);
+        stack.push(50);
+
+        stack.printStack(); // [ 10, 20, 30, 40, 50]
+        System.out.println("Size : " + stack.size()); // Size : 5
+
+        System.out.println(stack.isEmpty()); // false
+        System.out.println(stack.isFull()); // true
+
+        stack.clear();
+
+        stack.printStack(); // Empty stack
+        System.out.println("Size : " + stack.size()); // Size : 0
+
+        System.out.println(stack.isEmpty()); // true
+        System.out.println(stack.isFull()); // false
+
+        ////////////////////
+        // grow stack
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+        stack.push(60); // Stack size increased
+
+        stack.printStack(); // [ 10, 20, 30, 40, 50, 60 ]
+        System.out.println("Size : " + stack.size()); // Size : 6
     }
 }
