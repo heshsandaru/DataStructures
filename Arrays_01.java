@@ -7,6 +7,15 @@ public class Arrays_01 {
         for (int number : numbers) {
             System.out.print(number + " ");
         }
+        System.out.println();
 
+        // Sort the array
+        java.util.Arrays.sort(numbers);
+
+        // Print sorted array
+        System.out.println("Sorted array:");
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
     }
 }
