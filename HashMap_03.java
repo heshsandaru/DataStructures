@@ -13,5 +13,10 @@ public class HashMap_03 {
         // Accessing values
         int value = map.get("Banana"); // Accessing the value for key "Banana"
         System.out.println("value: " + value);
+
+        // Iterating through the HashMap
+        for (String key : map.keySet()) {
+            System.out.println(key + ": " + map.get(key));
+        }
     }
 }
